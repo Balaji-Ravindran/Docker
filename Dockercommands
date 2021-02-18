@@ -1,0 +1,20 @@
+#run docker image
+docker run -it ubuntu /bin/bash
+-it : provides interactive shell
+/bin/bash: shell that will be installed in the terminal
+
+#List all containers
+docker ps -a
+docker container ls -a
+
+#List Running containers
+docker container ls
+
+#Name the container
+docker run --name gamut -it ubuntu /bin/bash
+
+#Deleting a container
+docker rm image ID/image name
+
+#list of images
+docker images
